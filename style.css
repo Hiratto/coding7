@@ -64,3 +64,70 @@ main h2 + p {
     text-align: left;  
   }  
 } 
+
+/* テーブル：順位表 */
+
+.table {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+  margin-top: 28px;
+}
+
+.table th,
+.table td {
+  padding: 5px 0;
+  border: solid 1px #d3d3d3;
+  color: #282832;
+  font-size: 14px;
+  text-align: center;
+}
+
+.table thead th {
+  border-top: solid 1px #d3d3d3;
+}
+
+.table th:nth-child(2) {
+  text-align: left;
+}
+
+.table tbody th:nth-child(1) {
+  font-weight: normal;
+}
+
+.table th:nth-child(1) {
+  width: 42px;
+  background-color: #282832;
+  color: #fff;
+}
+
+.table th:nth-child(2) {
+  width: 150px;
+  background-color: #282832;
+  color: #fff;
+  box-shadow: 4px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.table th:nth-child(2) img {
+  width: 24px;
+  height: auto;
+  padding: 3px 13px 3px 3px;
+}
+
+.table th:nth-child(2) a {
+  display: flex;
+  align-items: center;
+}
+
+.table th:last-child {
+  width: 150px;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+.table td:last-child img {
+  width: 16px;
+  height: auto;
+}
