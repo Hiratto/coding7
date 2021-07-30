@@ -69,9 +69,9 @@ main h2 + p {
 
 .table {
   width: 100%;
+  min-width: 550px;
   table-layout: fixed;
   border-spacing: 0;
-  margin-top: 28px;
 }
 
 .table th,
@@ -97,6 +97,8 @@ main h2 + p {
 
 .table th:nth-child(1) {
   width: 42px;
+  padding-right: 10px;
+  box-sizing: border-box;
   background-color: #282832;
   color: #fff;
 }
@@ -130,4 +132,36 @@ main h2 + p {
 .table td:last-child img {
   width: 16px;
   height: auto;
+}
+
+@media (max-width: 899px) {
+  .table th,
+  .table td {
+    font-size: 13px;
+  }
+  .table thead span {
+    height: 48px;
+  }
+  .table th:nth-child(2) {
+    width: 120px;
+  }
+}
+
+/* レスポンシブテーブル */
+
+.table-wrapper {
+  overflow: auto;
+  margin-top: 28px;
+}
+
+.table th:nth-child(1) {
+  -webkit-mask-position: sticky;
+  position: sticky;
+  left: 0;
+}
+
+.table th:nth-child(2) {
+  -webkit-mask-position: sticky;
+  position: sticky;
+  left: 42px;
 }
