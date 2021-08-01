@@ -54,6 +54,10 @@ main section {
   color: #621f82;  
 }  
 
+main section.showdown {
+  margin-top: -90px;
+}
+
 main h2 {  
   margin-bottom: 5px;  
   font-size: 24px;  
@@ -741,4 +745,25 @@ html.open , .open body {
 
 .nav-sns li {  
   margin: 30px 10px 0;  
+} 
+
+
+/* IE */  
+@media all and (-ms-high-contrast: none),  
+not all and (-ms-high-contrast: none) {  
+  main {  
+    display: block;  
+  }  
+  .hero-placeholder,  
+  .hero-placeholder::before,  
+  .hero-placeholder::after,  
+  .hero-main,  
+  .hero-main::before,  
+  .hero-main::after {  
+    top: 0;  
+    left: 0;  
+  }  
+  .header .container .navbtn {  
+    margin-left: auto;  
+  }  
 } 
